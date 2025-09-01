@@ -22,7 +22,7 @@ function AttendanceView() {
         console.log("fetch attendance")
         try {
             const resp = await attendanceApi.get<AttendanceResp>('attendance')
-            console.log(resp.data.data[0].date)
+            console.log(resp.data.data)
             setAttendance(resp.data.data)
         } catch(e) {
             if (e instanceof Error) {
