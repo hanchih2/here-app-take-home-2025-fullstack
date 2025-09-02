@@ -7,14 +7,15 @@ cd here-app-take-home-2025-fullstack
 
 ## Run the Server
 
-install dependencies
+1. install dependencies
 
 ```
 cd server
 npm install
 ```
 
-the server should run on port 4000
+2. update connection string in server/config/secrets.js
+3. the server should run on port 4000
 
 ```
 npm start
@@ -44,10 +45,9 @@ docker rmi mongo:4.4
 
 ## Run the Client
 
-install dependencies
+install dependencies (go back to root directory if you are still in server directory)
 
 ```
-cd .. // if you are in server directory
 cd client
 npm install
 ```
