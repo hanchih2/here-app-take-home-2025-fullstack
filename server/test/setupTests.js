@@ -1,10 +1,6 @@
-// test/setupTests.functional.js
 jest.setTimeout(120_000);
 
 const mongoose = require('mongoose');
-const { MongoDBContainer } = require('@testcontainers/mongodb');
-
-let container, uri;
 
 beforeAll(async () => {
   const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017';
@@ -18,5 +14,4 @@ afterEach(async () => {
 
 afterAll(async () => {
   await mongoose.disconnect();
-  // await container.stop();
 });

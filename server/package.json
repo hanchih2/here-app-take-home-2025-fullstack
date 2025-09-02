@@ -20,8 +20,6 @@
     "ts-jest": "^29.4.1"
   },
   "devDependencies": {
-    "@testcontainers/mongodb": "^11.5.1",
-    "mongodb-memory-server": "^10.2.0",
     "supertest": "^7.1.4"
   }
 }
