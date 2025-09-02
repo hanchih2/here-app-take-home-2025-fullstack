@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec node index.js",
-    "test": "jest"
+    "test:unit": "jest --selectProjects unit",
+    "test:func": "jest --selectProjects functional --runInBand"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +16,12 @@
     "express": "^5.1.0",
     "jest": "^30.1.2",
     "mongoose": "^8.18.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.4.1"
   },
   "devDependencies": {
+    "@testcontainers/mongodb": "^11.5.1",
+    "mongodb-memory-server": "^10.2.0",
     "supertest": "^7.1.4"
   }
 }

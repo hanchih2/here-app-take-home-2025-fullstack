@@ -8,7 +8,7 @@ jest.mock('../models/log', () => {
   return MockLog;
 });
 const Log = require('../models/log');
-const router = require('../routes/log');
+const router = require('./log');
 
 function makeApp() {
   const app = express();
